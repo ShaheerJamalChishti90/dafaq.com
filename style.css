@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #55CDFC 25%, #F7A8B8 25%, #F7A8B8 50%, #ffffff 50%, #ffffff 75%, #B987C1 75%);
+  background-size: 200% 200%; /* Adjusted background size */
+}
+
+.button {
+  margin: 10px;
+  padding: 5px 15px; /* Adjusted padding values */
+  font-size: 24px; /* Adjusted font size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px rgb(21, 0, 255);
+  }
+  100% {
+    box-shadow: 0 0 30px #2701ff;
+  }
+}
+
+.button1 {
+  background-color: #999999;
+  color: #ffffff;
+}
+
+.button2 {
+  background-color: #999999;
+  color: #ffffff;
+}
+
+.button:hover {
+  background: linear-gradient(#0F3443, #34E89E);
+}
+
+.active {
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  color: #000000;
+}
